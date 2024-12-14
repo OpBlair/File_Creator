@@ -11,7 +11,7 @@ A user can specify the names of the files, number and their extension.
 - Ensure that you have python installed on your computer. You can download it from [python.org](https://www.python.org/downloads/).
 - Clone this repository:
   '''cmd
-  git clone https://github.com/Tonny-Blair-Daniel/File_creator.git
+  git clone https://github.com/Tonny-Blair-Daniel/File_Creator.git
 - Navigate to your desktop before cloning from the command line:"cd desktop"
 ## Usage
 - Run the script in the folder/location where you want the files to be created.
