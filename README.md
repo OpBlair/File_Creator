@@ -10,7 +10,7 @@ A user can specify the names of the files, number and their extension.
 ## Installation
 1.Ensure that you have python installed on your computer. You can download it from [python.org](https://www.python.org/downloads/).
 2.Clone this repository:
-  '''cmd
+  '''bash
   git clone https://github.com/Tonny-Blair-Daniel/File_creator.git
 3.Navigate to your desktop before cloning from the command line:
    '''cmd
