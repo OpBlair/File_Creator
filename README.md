@@ -1,1 +1,2 @@
-## This python script creates files in the location where its executed
+# File Creation Script
+This python script creates files in the location where its executed
