@@ -1,4 +1,6 @@
 # File Creation Script
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+
 This Python script allows a user to create multiple files with a common naming pattern. You can specify the base file name, the number of files, and their extension.
 ## Features
 
