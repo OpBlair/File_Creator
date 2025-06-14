@@ -1,19 +1,42 @@
 # File Creation Script
-This python script allows a user to create multiple files with a common naming pattern.
-A user can specify the names of the files, number and their extension.
+This Python script allows a user to create multiple files with a common naming pattern. You can specify the base file name, the number of files, and their extension.
 ## Features
-- Prompts the user for file name
-- Asks for the number of files to be created
-- Asks for the extension of the file
+
+- **CLI Version:**  
+  - Prompts the user for file name, number of files, and file extension via the command line.
+- **GUI Version:**  
+  - Provides a graphical interface to select the folder, enter file name, number of files, and extension.  
+  - Cross-platform support for Windows, macOS and Linux though it needs a few enhancements.
+
 ## Requirements
-- Python 3
+- Python 3.x installed on your computer.  
+  Download from [python.org](https://python.org).
+
 ## Installation
-- Ensure that you have python installed on your computer. You can download it from [python.org](https://www.python.org/downloads/).
-- Clone this repository:
-  '''cmd
-  git clone https://github.com/Tonny-Blair-Daniel/File_Creator.git
-- Navigate to your desktop before cloning from the command line:"cd desktop"
+
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/Tonny-Blair-Daniel/File_Creator.git
+2. Navigate to the project folder:
+   ```bash
+   cd File_Creator
+   
 ## Usage
+1. CLI Version
 - Run the script in the folder/location where you want the files to be created.
-- From the command line: "python fileCreator.py"
-- From VS code just run the file and the terminal will prompt you.
+  ```bash
+  python fileCreator.py
+- Follow terminal commands
+2. GUI Version
+- Open the gui-version folder.
+- Run the GUI app:
+  ```bash
+  python gui_file_creator.py
+- Use the interface to browse for the folder and input details.
+  
+- The GUI version is a newer upgrade with a user-friendly interface.
+- Linux support for the GUI is in progress.
+
+## Acknowledgements
+- Special thanks to my mentor Mr Ian and lecturer Mr. Peter for their guidance.
+
