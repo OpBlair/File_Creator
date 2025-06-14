@@ -1,1 +1,64 @@
+import os
+import tkinter as tk
+
+import tkinter.filedialog as fd
+
+first = tk.Tk()
+
+heading = first.title("File Creator App")
+
+content = tk.Label(first, text="Select folder:")
+
+content.grid(row = 0)
+
+selected_Folder = tk.Label(first, text = "Selected Folder: None")
+
+selected_Folder.grid(row = 1)
+
+def open_file():
+    global file_path
+    file_path = fd.askdirectory()
+    if file_path:
+        print("You chose:", file_path)
+        selected_Folder.config(text = f'Selected Folder: {file_path}')
+
+    else:
+        selected_Folder.config(text = 'Selected Folder: No folder selected')
+
+file_browser_Btn = tk.Button(first, text="Browse", width = 25, command=open_file)
+
+file_browser_Btn.grid(row = 0, column = 1)
+
+file_Name = tk.Label(first, text="Enter File Name")
+file_Name.grid(row = 2)
+
+number_of_files = tk.Label(first, text="Enter number of files")
+number_of_files.grid(row = 3)
+
+file_extension = tk.Label(first, text = "Enter the file extension.")
+file_extension.grid(row = 4)
+
+f1 = tk.Entry(first)
+f2 = tk.Entry(first)
+f3 = tk.Entry(first)
+
+f1.grid(row = 2, column = 1)
+f2.grid(row = 3, column = 1)
+f3.grid(row = 4, column = 1)
+
+def Create_Files():
+    file_name = f1.get()
+    num_of_files = int(f2.get())
+    file_extension_value = f3.get()
+
+    for x in range(1,num_of_files + 1):
+        with open(os.path.join(file_path, f"{file_name}-{x}.{file_extension_value}"), "x"):
+            pass
+    
+    print("Files created Successfully!")
+
+createBtn = tk.Button(first, text = "Create Files", width = 25, command = Create_Files)
+createBtn.grid(row = 5)
+
+first.mainloop()
 
